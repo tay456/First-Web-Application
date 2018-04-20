@@ -1,0 +1,117 @@
+<html>
+<head>
+    <title> front page</title>
+    <link href="/addingItem.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div class="app-container">
+    <!-- A fixed header, using flexbox -->
+    <header>
+        <!-- A navigation bar fixed to the top of the screen -->
+        <nav class="navigation-bar" role="navigation">
+            <a>Romance</a>
+            <a>Horror</a>
+            <a>Action</a>
+            <a>Adventure</a>
+            <a>Thriller</a>
+            <a>
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="quick search"></input>
+                    <br>
+                    <a id="advanced-search"> or advanced search</a>
+                </div>
+            </a>
+
+        </nav>
+    </header>
+    <!-- The scrollable main view container -->
+    <main>
+        <!-- A main header footer fixed to the bottom of the screen -->
+
+        <h2 id="main-title">Add a TV-Show or Movie</h2>
+        <form action="/new-add/submit" method="POST">
+            <ul class="outer">
+                <li>
+                    <label for="title">TITLE</label>
+                    <input type="text" name="title">
+                </li>
+                <br>
+                <br>
+                <li>
+                    <label for="typeOfMedia"> Movie or TV-show</label>
+                    <br>
+                    <select name="typeOfMedia">
+                        <option value="movie">Movie</option>
+                        <option value="tv">TV-show</option>
+                    </select>
+                </li>
+                <br>
+                <br>
+                <li>
+                    <label for="year">Year of release:</label>
+                    <input type="text " name="year"/>
+                </li>
+                <br>
+                <br>
+                <li>
+                    <label for="genre"> GENRE (select the genre of the movie from the drop-down, you can only select one) </label>
+                    <br>
+                    <select name="genre">
+                        <option value="romance">Romance</option>
+                        <option value="horror">Horror</option>
+                        <option value="action">Action</option>
+                        <option value="adventure">Adventure</option>
+                        <option value="thriller">Thriller</option>
+                    </select>
+                </li>
+                <br>
+                <br>
+                <li>
+                    <label for="ageClass">Age Classification (please select appropriate viewing age)</label>
+                    <br>
+                    <select name="ageClass">
+                        <option value="u">U</option>
+                        <option value="pg">PG</option>
+                        <option value="12a">12A</option>
+                        <option value="15">15</option>
+                        <option value="18+">18+</option>
+                    </select>
+                </li>
+
+                <br>
+                <br>
+
+
+                <li>
+                    <label for="numberOfSeasons"> Number of seasons (if adding a movie please enter n/a into this field)</label>
+                    <input type="text" name="numberOfSeasons">
+                </li>
+                <br>
+                <br>
+                <li>
+                    <label for="personalRating">YOUR PERSONAL RATING (enter a number from 1 to 10 1 being rubbish not worth watching and 10 being amazing should definatley be watched) no more than one rating can be enetered  </label>
+                    <input type="text" name="personalRating"/>
+                </li>
+                <br>
+                <br>
+                <li>
+                    <button id="submit-form-button" type="submit" name="submit">Submit</button>
+                </li>
+                </ul>
+        </form>
+        <!-- main paragraph -->
+
+        <!-- button should take you to add movie or tv-show page -->
+
+        <!-- search bar with some text that has a hyperlink should take you to another advanced search page -->
+
+    </main>
+    <!-- A footer fixed to the bottom of the screen -->
+    <footer>
+        <div>
+        </div>
+    </footer>
+</div>
+</body>
+</html>

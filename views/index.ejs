@@ -1,0 +1,53 @@
+<html>
+<head>
+    <title> front page</title>
+    <link href="/main.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+
+
+<div class="app-container">
+    <!-- A fixed header, using flexbox -->
+    <header>
+        <!-- A navigation bar fixed to the top of the screen -->
+        <nav class="navigation-bar" role="navigation">
+            <a>Romance</a>&emsp;&emsp;
+            <a>Horror</a>&emsp;&emsp;
+            <a>Action</a>&emsp;&emsp;
+            <a>Adventure</a>&emsp;&emsp;
+            <a>Thriller</a>&emsp;&emsp;
+        </nav>
+    </header>
+    <!-- The scrollable main view container -->
+    <main>
+        <!-- A main header footer fixed to the bottom of the screen -->
+
+        <h1 id="main-title">Tv-show and Movie App</h1>
+
+        <!-- main paragraph -->
+
+        <p>Welcome this application allows you to add movies or tv-shows and then give them a rating. You can also search for a particular movie or tv-show and view the rating, or give it a rating by using the search bar below. Alternatively you can see movies
+            or tv-shows via generes by selecting one of the five listed in the navigation bar above the title of the app.</p>
+
+        <!-- button should take you to add movie or tv-show page -->
+
+        <a href="/new-add">
+            <button class="button"> ADD TV-SHOW OR MOVIE</button>
+        </a>
+        <br>
+
+        <!-- search bar with some text that has a hyperlink should take you to another advanced search page -->
+
+        <div class="search-box">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="quick search"></input>
+        </div>
+        <p id="under-search">instead of a quick search you can also do an advanced search by clicking <a>here</a> </p>
+    </main>
+    <!-- A footer fixed to the bottom of the screen -->
+    <footer>
+
+    </footer>
+</div>
+</body>
+</html>
